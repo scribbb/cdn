@@ -1,0 +1,4 @@
+cdn
+===
+
+Static files CDN
