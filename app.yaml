@@ -1,0 +1,22 @@
+application: scribbbcdn
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+default_expiration: "365d"
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /js
+  static_dir: js
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
